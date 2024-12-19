@@ -6,6 +6,7 @@ import kishan from "../../assets/kishan.jpeg";
 import iitm from "../../assets/iitm.jpg";
 import gour from "../../assets/gour.jpg";
 import Technologies from "../Technologies/Technologies.jsx";
+import TechProgress from "../TechProgress/TechProgress.jsx";
 export default function About() {
   return (
     <motion.div
@@ -37,7 +38,7 @@ export default function About() {
         </div>
       </div>
       <div className="education mt-3">
-        <h1 className="text-4xl font-extrabold text-white text-center">
+        <h1 className="text-4xl  text-center bg-slate-800 rounded-lg mx-4 py-2 font-extrabold text-white">
           Education
         </h1>
         <Education
@@ -82,6 +83,9 @@ export default function About() {
       </div>
       <div className="mt-10 flex items-center justify-center gap-x-6 mb-16 text-white">
         <Technologies />
+      </div>
+      <div className="mt-10 flex items-center justify-center gap-x-6 mb-16 text-white">
+        <TechProgress />
       </div>
     </motion.div>
   );

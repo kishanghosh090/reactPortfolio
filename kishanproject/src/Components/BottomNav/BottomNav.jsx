@@ -21,7 +21,7 @@ function BottomNav() {
               to="/"
               className={({ isActive }) =>
                 `${
-                  isActive ? "bg-pink-900 text-white" : ""
+                  isActive ? "bg-pink-950 text-white" : ""
                 } flex justify-center items-center flex-col p-1  h-[2.5rem] w-[2.5rem] rounded-full  transition-transform bg-white text-black text-2xl `
               }
             >
@@ -40,7 +40,7 @@ function BottomNav() {
               to="/About"
               className={({ isActive }) =>
                 `${
-                  isActive ? "bg-pink-900 text-white" : ""
+                  isActive ? "bg-pink-950 text-white" : ""
                 } flex justify-center items-center flex-col p-1  h-[2.5rem] w-[2.5rem] rounded-full  transition-transform bg-white text-black text-2xl `
               }
             >
@@ -58,7 +58,7 @@ function BottomNav() {
               to="/Contact"
               className={({ isActive }) =>
                 `${
-                  isActive ? "bg-pink-900 text-white" : ""
+                  isActive ? "bg-pink-950 text-white" : ""
                 } flex justify-center items-center flex-col p-1  h-[2.5rem] w-[2.5rem] rounded-full  transition-transform bg-white text-black text-2xl `
               }
             >
@@ -76,7 +76,7 @@ function BottomNav() {
               to="/Projects"
               className={({ isActive }) =>
                 `${
-                  isActive ? "bg-pink-900 text-white" : ""
+                  isActive ? "bg-pink-950 text-white" : ""
                 } flex justify-center items-center flex-col p-1  h-[2.5rem] w-[2.5rem] rounded-full  transition-transform bg-white text-black text-2xl `
               }
             >

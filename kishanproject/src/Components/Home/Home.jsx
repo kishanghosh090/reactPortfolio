@@ -52,7 +52,7 @@ export default function Home() {
                 challenges.
               </p>
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-6 mb-4">
               <NavLink
                 to="/Contact"
                 className="rounded-md bg-pink-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -61,7 +61,11 @@ export default function Home() {
               </NavLink>
             </div>
             <div className="image h-52 w-52">
-              <img src={kishan} alt="" className="image h-52 w-52" />
+              <img
+                src={kishan}
+                alt=""
+                className="image h-52 w-52 rounded-md rounded-br-3xl rounded-tl-3xl shadow-2xl"
+              />
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Technologies />
