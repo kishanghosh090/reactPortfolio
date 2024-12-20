@@ -1,14 +1,54 @@
 import React from "react";
 
+import axios from "axios";
 import { motion } from "framer-motion";
 import { Form } from "react-router-dom";
-
+import { Button } from "@nextui-org/react";
 function Contact() {
-  const [action, setAction] = React.useState(null);
-  const whenSubmit = (e) => {
-    e.preventDefault();
-    console.log(e);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [formData, setFormData] = React.useState({
+    username: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
+  const handleSubmit = async (e) => {
+    if (!formData.username || !formData.email || !formData.message) {
+      alert("Please fill all the fields");
+      return;
+    }
+    e.preventDefault();
+    setIsOpen(true);
+
+    axios
+      .post("send-email/", formData)
+      .then((response) => {
+        setIsOpen(false);
+        setFormData({
+          username: "",
+          email: "",
+          message: "",
+        });
+        alert("Email sent successfully");
+      })
+      .catch((error) => {
+        setFormData({
+          username: "",
+          email: "",
+          message: "",
+        });
+        alert("Error sending email");
+        setIsOpen(false);
+        console.log(error);
+      });
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -35,33 +75,67 @@ function Contact() {
             Contact Me
           </h1>
           <Form
-            onSubmit={whenSubmit}
+            onSubmit={handleSubmit}
             className="md:text-2xl text-xl md:w-[100%] flex flex-col gap-4 bg-slate-800 py-4 px-4 rounded-3xl z-50"
           >
             <label htmlFor="name">Enter Your Name</label>
             <input
+              name="username"
               type="text"
               className="px-4 py-2 rounded-full bg-slate-700 focus:outline-none"
               placeholder="Your Name"
+              value={formData.username}
+              onChange={handleChange}
             />
             <label htmlFor="email" className="text-slate-50">
               Enter Your Email
             </label>
             <input
+              name="email"
               type="email"
               className="px-4 py-2  rounded-full bg-slate-700 focus:outline-none"
               placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
             />
             <label htmlFor="message" className="text-slate-50">
               Enter Your Message
             </label>
             <textarea
+              name="message"
               className="px-4 py-2 rounded-3xl bg-slate-700 focus:outline-none"
               placeholder="Your Message"
-            ></textarea>
-            <button className="px-4 py-2 rounded-full bg-pink-600">
+              value={formData.message}
+              onChange={handleChange}
+            />
+            <Button
+              type="submit"
+              className="px-4 py-2 rounded-full bg-pink-600"
+            >
               Submit
-            </button>
+              {isOpen && (
+                <svg
+                  className="animate-spin h-5 w-5 text-current"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    fill="currentColor"
+                  />
+                </svg>
+              )}
+            </Button>
           </Form>
         </div>
         <div
