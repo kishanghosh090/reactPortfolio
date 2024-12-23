@@ -103,6 +103,114 @@ export default function TechProgress() {
         <h1 className="text-2xl text-left bg-slate-600 p-2 rounded-xl">
           Libraries & Frameworks
         </h1>
+        <div className="Libraries rounded-lg flex flex-wrap gap-4 p-5 items-center justify-center">
+          <div className="js bg-white text-black  rounded-lg flex justify-center items-center gap-4 p-5 flex-col ">
+            <span className="text-white bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl ">
+              {" "}
+              <SiExpress />
+            </span>
+            <span>
+              <CircularProgress
+                color="success"
+                className="text-green-500"
+                showValueLabel={true}
+                size="lg"
+                value={70}
+              />
+            </span>
+          </div>
+          <div className="nodejs bg-white text-black  rounded-lg flex justify-center items-center flex-col gap-4 p-5">
+            <span className="text-cyan-300 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl">
+              <FaReact />
+            </span>
+            <span>
+              <CircularProgress
+                color="success"
+                className="text-green-500"
+                showValueLabel={true}
+                size="lg"
+                value={70}
+              />
+            </span>
+          </div>
+          <div className="Python bg-white text-black  rounded-lg flex justify-center items-center flex-col gap-4 p-5">
+            <span className="text-green-700 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl">
+              <SiDjango />
+            </span>
+            <CircularProgress
+              className="text-orange-500"
+              showValueLabel={true}
+              size="lg"
+              value={60}
+            />
+          </div>
+          <div className="cpp bg-white text-black  rounded-lg flex justify-center items-center flex-col gap-4 p-5">
+            <span className="text-sky-300 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl">
+              <SiTailwindcss />
+            </span>
+            <CircularProgress
+              color="success"
+              className="text-green-500"
+              showValueLabel={true}
+              size="lg"
+              value={70}
+            />
+          </div>
+        </div>
+        <h1 className="text-2xl text-left bg-slate-600 p-2 rounded-xl">
+          Databases
+        </h1>
+        <div className="Libraries rounded-lg flex flex-wrap gap-4 p-5 items-center justify-center">
+          <div className="js bg-white text-black  rounded-lg flex justify-center items-center gap-4 p-5 flex-col ">
+            <span className="text-cyan-600 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl ">
+              {" "}
+              <BiLogoPostgresql />
+            </span>
+            <span>
+              <CircularProgress
+                color="success"
+                className="text-green-500"
+                showValueLabel={true}
+                size="lg"
+                value={70}
+              />
+            </span>
+          </div>
+          <div className="nodejs bg-white text-black  rounded-lg flex justify-center items-center flex-col gap-4 p-5">
+            <span className="text-green-300 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl">
+              <SiMongodb />
+            </span>
+            <span>
+              <CircularProgress
+                color="success"
+                className="text-green-500"
+                showValueLabel={true}
+                size="lg"
+                value={70}
+              />
+            </span>
+          </div>
+        </div>
+        <h1 className="text-2xl text-left bg-slate-600 p-2 rounded-xl">
+          Other tools
+        </h1>
+        <div className="Libraries rounded-lg flex flex-wrap gap-4 p-5 items-center justify-center">
+          <div className="js bg-white text-black  rounded-lg flex justify-center items-center gap-4 p-5 flex-col ">
+            <span className="text-amber-600 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl ">
+              {" "}
+              <FaGitAlt />
+            </span>
+            <span>
+              <CircularProgress
+                color="success"
+                className="text-green-500"
+                showValueLabel={true}
+                size="lg"
+                value={70}
+              />
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
