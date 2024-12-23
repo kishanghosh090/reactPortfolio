@@ -27,7 +27,7 @@ function Footer() {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://flowbite.com/"
+                    href="https://github.com/kishanghosh090"
                     className="hover:underline flex  items-center gap-3"
                   >
                     LinkedIn <FaGithub />
@@ -35,7 +35,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://tailwindcss.com/"
+                    href="https://www.linkedin.com/in/kishan-rana-ghosh"
                     className="hover:underline flex  items-center gap-3"
                   >
                     Github <FaLinkedin />
