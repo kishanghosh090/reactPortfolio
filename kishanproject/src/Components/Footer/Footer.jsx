@@ -30,7 +30,7 @@ function Footer() {
                     href="https://github.com/kishanghosh090"
                     className="hover:underline flex  items-center gap-3"
                   >
-                    LinkedIn <FaGithub />
+                    LinkedIn <FaLinkedin />
                   </a>
                 </li>
                 <li>
@@ -38,7 +38,8 @@ function Footer() {
                     href="https://www.linkedin.com/in/kishan-rana-ghosh"
                     className="hover:underline flex  items-center gap-3"
                   >
-                    Github <FaLinkedin />
+                    Github
+                    <FaGithub />
                   </a>
                 </li>
               </ul>
