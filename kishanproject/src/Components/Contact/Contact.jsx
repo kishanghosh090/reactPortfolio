@@ -27,7 +27,7 @@ function Contact() {
     setIsOpen(true);
 
     axios
-      .post("send-email/", formData)
+      .post("https://portfoliobackend-l7xc.onrender.com/send-email", formData)
       .then((response) => {
         setIsOpen(false);
         setFormData({
