@@ -15,11 +15,11 @@ import { FaGitAlt } from "react-icons/fa";
 function Technologies() {
   return (
     <div className="py-2 px-4">
-      <h1 className="text-3xl text-center bg-slate-800 rounded-lg px-4 py-2 font-extrabold text-white ">
+      <h1 className="text-3xl text-center bg-green-900 rounded-lg px-4 py-2 font-extrabold text-white ">
         Technologies
       </h1>
       <div className="technologies bg-slate-800 px-5 py-3  mt-4 flex justify-center flex-col gap-4 rounded-xl">
-        <h1 className="text-2xl text-left p-2 rounded-xl bg-slate-600">
+        <h1 className="text-tiny uppercase font-bold">
           Languages and Runtime Environment
         </h1>
         <div className="Languages bg-white text-black text-5xl rounded-lg flex flex-wrap gap-4 p-5">
@@ -43,7 +43,7 @@ function Technologies() {
             <FaNodeJs />
           </div>
         </div>
-        <h1 className="text-2xl text-left p-2 rounded-xl bg-slate-600">
+        <h1 className="text-tiny uppercase font-bold">
           Frameworks & Libraries
         </h1>
         <div className="frameworks Languages bg-white text-black text-5xl rounded-lg flex flex-wrap gap-4 p-5">
@@ -60,7 +60,7 @@ function Technologies() {
             <SiTailwindcss />
           </div>
         </div>
-        <h1 className="text-2xl text-left p-2 rounded-xl bg-slate-600">Databases</h1>
+        <h1 className="text-tiny uppercase font-bold">Databases</h1>
         <div className="database Languages bg-white text-black text-5xl rounded-lg flex flex-wrap gap-4 p-5">
           <div className="text-green-300 bg-slate-900 w-[65px] flex justify-center items-center h-[65px] rounded-full p-2">
             <SiMongodb />
@@ -69,7 +69,7 @@ function Technologies() {
             <BiLogoPostgresql />
           </div>
         </div>
-        <h1 className="text-2xl text-left p-2 rounded-xl bg-slate-600">other tools</h1>
+        <h1 className="text-tiny uppercase font-bold">other tools</h1>
         <div className="tools Languages bg-white text-black text-5xl rounded-lg flex flex-wrap gap-4 p-5">
           <div className="text-amber-600 bg-slate-900 w-[65px] flex justify-center items-center h-[65px] rounded-full p-2">
             <FaGitAlt />

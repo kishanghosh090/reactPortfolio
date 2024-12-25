@@ -42,9 +42,9 @@ function Project() {
         </div>
         {/* main content */}
         <div className="py-12 ">
-          <div className="content">
+          <div className="webProjects bg-green-900 px-2 py-4 rounded-2xl">
             <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
-              Projects
+              Web Devlopment Projects
             </h1>
             <ProjectCard content={container.geminiClone} />
             <ProjectCard content={container.weatherApp} />
