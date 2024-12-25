@@ -56,7 +56,7 @@ export default function Home() {
             <div className="mt-10 flex items-center justify-center gap-x-6 mb-4 z-50">
               <NavLink
                 to="/Contact"
-                className="rounded-md z-50 bg-pink-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="relative inline-flex items-center rounded-md z-[100] bg-pink-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Contact Me <span aria-hidden="true"> → </span>
               </NavLink>

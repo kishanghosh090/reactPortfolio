@@ -27,12 +27,7 @@ function Header() {
       </div>
       {isOpen && (
         <div className="transition-transform z-50 ">
-          <motion.div
-            initial={{ opacity: 0, y: -200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="absolute top-[55px] left-0 bg-slate-200 text-slate-900 text-4xl  h-[30%] w-[100vw] p-14 flex flex-col gap-12 transition-transform shadow-2xl rounded-sm z-50 rounded-b-3xl "
-          >
+          <motion.div className="absolute top-[55px] left-0 bg-slate-200 text-slate-900 text-4xl  h-[30%] w-[100vw] p-14 flex flex-col gap-12 transition-transform shadow-2xl rounded-sm z-50 rounded-b-3xl ">
             <NavLink to="https://github.com/kishanghosh090">
               <li className="hover:text-[#66aaf9] cursor-pointer flex gap-4 bg-pink-600 w-auto py-2 px-3 rounded-full justify-start items-center md:w-[50%]">
                 <FaGithub />
