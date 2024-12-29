@@ -1,5 +1,5 @@
 import React from "react";
-
+import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 import { motion } from "framer-motion";
 import { Form } from "react-router-dom";
@@ -20,14 +20,14 @@ function Contact() {
   };
   const handleSubmit = async (e) => {
     if (!formData.username || !formData.email || !formData.message) {
-      alert("Please fill all the fields");
+      toast.error("Please fill all the fields");
       return;
     }
     e.preventDefault();
     setIsOpen(true);
 
     axios
-      .post("https://portfoliobackend-l7xc.onrender.com/send-email", formData)
+      .post("send-email/", formData)
       .then((response) => {
         setIsOpen(false);
         setFormData({
@@ -35,7 +35,7 @@ function Contact() {
           email: "",
           message: "",
         });
-        alert("Email sent successfully");
+        toast.success("Email sent successfully");
       })
       .catch((error) => {
         setFormData({
@@ -43,7 +43,7 @@ function Contact() {
           email: "",
           message: "",
         });
-        alert("Error sending email");
+        toast.error("Error sending email");
         setIsOpen(false);
         console.log(error);
       });
@@ -56,6 +56,7 @@ function Contact() {
       transition={{ duration: 0.4 }}
       className="bg-slate-900 text-white rounded-t-3xl z-40"
     >
+      <Toaster />
       <div className=" isolate px-6  lg:px-8">
         <div
           aria-hidden="true"

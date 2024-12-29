@@ -4,7 +4,11 @@ import kishan from "../../assets/kishan.jpeg";
 import { motion } from "framer-motion";
 import Technologies from "../Technologies/Technologies";
 import Contact from "../Contact/Contact.jsx";
+import { IoChatbubblesSharp } from "react-icons/io5";
+import Aibot from "../Aibot/Aibot.jsx";
+import { useState } from "react";
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -87,7 +91,17 @@ export default function Home() {
           />
         </div>
       </div>
-
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className="aibot absolute top-[80%] right-4 text-4xl  bg-pink-600 shadow-lg z-[50] px-2 py-2  rounded-full hover:bg-teal-500 hover:scale-110"
+      >
+        <IoChatbubblesSharp />
+      </div>
+      {isOpen && (
+        <div className="aibot absolute top-[30%] left-4 z-[40]">
+          <Aibot />
+        </div>
+      )}
       <Contact />
     </motion.div>
   );
