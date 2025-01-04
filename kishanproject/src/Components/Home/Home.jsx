@@ -14,7 +14,7 @@ export default function Home() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="bg-slate-900 text-white rounded-t-3xl z-40"
+      className="bg-neutral-950 text-neutral-300 rounded-t-3xl z-40"
     >
       <div className=" isolate md:px-8 px-4 pt-14 lg:px-6">
         <div
@@ -47,6 +47,7 @@ export default function Home() {
                 wrapper="span"
                 speed={40}
                 repeat={Infinity}
+                className="bg-gradient-to-r from-pink-400 via-slate-500 to-purple-500  tracking-tight text-transparent bg-clip-text"
               />
             </h1>
             <div>
@@ -91,7 +92,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div
+      {/* <div
         onClick={() => setIsOpen(!isOpen)}
         className="aibot absolute top-[80%] right-4 text-4xl  bg-pink-600 shadow-lg z-[50] px-2 py-2  rounded-full hover:bg-teal-500 hover:scale-110"
       >
@@ -101,7 +102,7 @@ export default function Home() {
         <div className="aibot absolute top-[30%] left-4 z-[40]">
           <Aibot />
         </div>
-      )}
+      )} */}
       <Contact />
     </motion.div>
   );
