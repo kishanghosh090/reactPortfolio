@@ -51,7 +51,7 @@ export default function Home() {
               />
             </h1>
             <div>
-              <p className="px-4 mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+              <p className="px-4 mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 text-left">
                 I am a Developer, and I love to drink coffee, I live in Malda.
                 Passinate React JS developer with 2 year of experience,
                 dedicated to make impressive web experience and solving complex
