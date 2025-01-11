@@ -15,10 +15,10 @@ import { FaGitAlt } from "react-icons/fa";
 function Technologies() {
   return (
     <div className="py-2 px-4">
-      <h1 className="text-3xl text-center bg-green-900 rounded-lg px-4 py-2 font-extrabold text-white ">
+      <h1 className="text-3xl text-center bg-neutral-900 rounded-lg px-4 py-2 font-extrabold text-white ">
         Technologies
       </h1>
-      <div className="technologies bg-slate-800 px-5 py-3  mt-4 flex justify-center flex-col gap-4 rounded-xl">
+      <div className="technologies bg-neutral-900 px-5 py-5  mt-4 flex justify-center flex-col gap-4 rounded-2xl">
         <h1 className="text-tiny uppercase font-bold">
           Languages and Runtime Environment
         </h1>

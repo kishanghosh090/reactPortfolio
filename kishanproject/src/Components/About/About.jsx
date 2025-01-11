@@ -13,14 +13,14 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="bg-slate-900 rounded-t-3xl   z-50 transition-opacity py-4 pb-6"
+      className="bg-neutral-950 rounded-t-3xl   z-50 transition-opacity py-4 pb-6"
     >
       <div className="text-center px-6 pt-3">
         <div className="flex justify-between items-center  mx-auto max-w-full py-2 px-3 bg-slate-800 rounded-2xl mb-4">
           <div className="image  h-20 w-20">
             <img src={kishan} alt="" className="image h-20 w-20 rounded-full" />
           </div>
-          <h1 className="text-balance text-xl font-semibold tracking-tight sm:text-7xl text-pink-700">
+          <h1 className="text-balance text-xl font-semibold tracking-tight sm:text-7xl ">
             <TypeAnimation
               sequence={[
                 "I Am A Web Developer",
@@ -33,12 +33,13 @@ export default function About() {
               wrapper="span"
               speed={40}
               repeat={Infinity}
+              className="bg-gradient-to-r from-pink-400 via-slate-500 to-purple-500  tracking-tight text-transparent bg-clip-text"
             />
           </h1>
         </div>
       </div>
       <div className="education mt-3">
-        <h1 className="text-4xl  text-center bg-green-900 rounded-lg mx-4 py-2 font-extrabold text-white">
+        <h1 className="text-4xl  text-center bg-neutral-900 rounded-lg mx-4 py-2 font-extrabold text-white">
           Education
         </h1>
         <Education

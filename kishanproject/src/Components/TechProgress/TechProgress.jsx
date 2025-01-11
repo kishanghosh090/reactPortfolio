@@ -15,14 +15,14 @@ import { FaGitAlt } from "react-icons/fa";
 export default function TechProgress() {
   return (
     <div className="py-2 px-4">
-      <h1 className="text-3xl text-center bg-green-900 rounded-lg px-4 py-2 font-extrabold text-white ">
+      <h1 className="text-3xl text-center bg-neutral-900 rounded-lg px-4 py-2 font-extrabold text-white ">
         Technologies Progress
       </h1>
-      <div className="languages  bg-slate-800 px-5 py-3  mt-4 flex justify-center flex-col gap-4 rounded-xl">
+      <div className="languages  bg-neutral-900 px-5 py-3  mt-4 flex justify-center flex-col gap-4 rounded-2xl">
         <h1 className="ttext-tiny uppercase font-bold">
           Languages & Runtime Environment
         </h1>
-        <div className="Languages rounded-lg flex flex-wrap gap-4 p-5 bg-pink-900">
+        <div className="Languages  flex flex-wrap gap-4 p-5 border-b-2">
           <div className="js bg-white text-black  rounded-lg flex justify-center items-center gap-4 p-5 flex-col ">
             <span className="text-yellow-400 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl ">
               {" "}
@@ -103,7 +103,7 @@ export default function TechProgress() {
         <h1 className="text-tiny uppercase font-bold">
           Libraries & Frameworks
         </h1>
-        <div className="Libraries rounded-lg flex flex-wrap gap-4 p-5 bg-pink-900">
+        <div className="Libraries border-b-2 flex flex-wrap gap-4 p-5">
           <div className="js bg-white text-black  rounded-lg flex justify-center items-center gap-4 p-5 flex-col ">
             <span className="text-white bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl ">
               {" "}
@@ -158,7 +158,7 @@ export default function TechProgress() {
           </div>
         </div>
         <h1 className="text-tiny uppercase font-bold">Databases</h1>
-        <div className="Libraries rounded-lg flex flex-wrap gap-4 p-5 bg-pink-900">
+        <div className="Libraries border-b-2 flex flex-wrap gap-4 p-5 ">
           <div className="js bg-white text-black  rounded-lg flex justify-center items-center gap-4 p-5 flex-col ">
             <span className="text-cyan-600 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl ">
               {" "}
@@ -190,7 +190,7 @@ export default function TechProgress() {
           </div>
         </div>
         <h1 className="text-tiny uppercase font-bold">Other tools</h1>
-        <div className="Libraries rounded-lg flex flex-wrap gap-4 p-5 bg-pink-900">
+        <div className="Libraries  flex flex-wrap gap-4 p-5 ">
           <div className="js bg-white text-black  rounded-lg flex justify-center items-center gap-4 p-5 flex-col ">
             <span className="text-amber-600 bg-slate-900 w-[60px] flex justify-center items-center h-[60px] rounded-full p-2 text-4xl ">
               {" "}

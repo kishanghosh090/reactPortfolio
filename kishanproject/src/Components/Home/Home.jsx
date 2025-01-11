@@ -34,7 +34,7 @@ export default function Home() {
             <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
               KISHAN RANA GHOSH
             </h1>
-            <h1 className="text-balance text-2xl font-semibold tracking-tight sm:text-6xl text-pink-700">
+            <h1 className="text-balance text-2xl font-semibold tracking-tight sm:text-6xl ">
               <TypeAnimation
                 sequence={[
                   "I Am A Web Developer",
