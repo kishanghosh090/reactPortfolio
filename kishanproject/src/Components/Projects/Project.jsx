@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import geminClone from "../../assets/gemini-clone.png";
 import weatherApp from "../../assets/weatherApp.png";
+import socialMediaApp from "../../assets/socialApp.png";
 function Project() {
   const container = {
     geminiClone: {
@@ -18,6 +19,12 @@ function Project() {
       description: `Curious about tomorrow's weather? Need to know if it's a good day for soccer practice? Our app is here to help! Just enter your city or , and it'll give you the latest forecast.click get code button to get code of this APP`,
       image: weatherApp,
       codeLink: "https://github.com/kishanghosh090/weatherAppProject",
+    },
+    socialMediaApp: {
+      name: "Social Media App",
+      description: `I've been working on building a modern social media platform that combines functionality, performance, and clean design. Here's what my project includes and what I've learned along the way. technologies used: React, Tailwind CSS, node.js, and express.js. jwt for authentication.`,
+      image: socialMediaApp,
+      codeLink: "https://github.com/kishanghosh090/FULLSTACK_SCOCIAL_MEDIA_APP",
     },
   };
   return (
@@ -46,6 +53,7 @@ function Project() {
             <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
               Web Devlopment Projects
             </h1>
+            <ProjectCard content={container.socialMediaApp} />
             <ProjectCard content={container.geminiClone} />
             <ProjectCard content={container.weatherApp} />
           </div>
